@@ -24,15 +24,6 @@ def displayGrid(grid):
         print("|\n")
 
 
-def basicUpdateGrid(grid):
-    for i, row in enumerate(grid):
-        for j, item in enumerate(row):
-            if item == 0:
-                grid[i][j] = 1
-    return grid
-
-
-
 def analyzeNeighbors(grid):
     numRows = len(grid)
     numCols = len(grid[0])
